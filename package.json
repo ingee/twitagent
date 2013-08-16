@@ -1,0 +1,31 @@
+{
+  "name": "twitagent",
+  "version": "0.0.1",
+  "description": "twitter agent",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-qunit": "~0.2.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-connect": "~0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ingee/twitagent.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "ingee.kim",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/ingee/twitagent/issues"
+  }
+}

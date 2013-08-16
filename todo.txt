@@ -1,0 +1,36 @@
+﻿todo
+=====
+
+!- 프로젝트 골격
+  !- 디렉토리 구조 생성
+    !- backbone boilerplate build 복사
+      !- yo bbb TwitAgent/ 실행에 문제가 있어,
+        "git clone https://github.com/backbone-boilerplate/backbone-boilerplate.git twitagent --depth 1" 실행후 복사함
+    !- grunt 설치
+      !- $> npm install grunt --save-dev
+  !- 빌드 규칙 작성
+    - debug: jshint, run
+    - release: jshint, uglify, qunit test
+  !- 테스트 규칙 작성
+    => 담에...
+- UI 구현
+  - 소스 골격
+  - UI 골격
+  - 화면전환 효과
+- Twitter API 호출
+  - log in
+  - 홈 기사 목록 query
+  - list 목록 query
+  - list 기사 목록 query
+- 상태 관리
+  - 설정
+  - 사용자 선택 저장
+    - 초기 리스트
+    - id/ pswd
+
+to-check
+=========
+- uglify의 정석
+  - requirejs, backbone 등 기본 fw 파일들은 하나의 파일로 묶는 것이 좋은가?
+  - concat 하고 말고의 기준이 무엇인가?
+  - best concat tool은? uglify? jam? etc?
