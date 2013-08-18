@@ -34,3 +34,19 @@ to-check
   - requirejs, backbone 등 기본 fw 파일들은 하나의 파일로 묶는 것이 좋은가?
   - concat 하고 말고의 기준이 무엇인가?
   - best concat tool은? uglify? jam? etc?
+
+to-report(bug)
+===============
+- http://cornerstone.sktelecom.com/livedoc/4_4_01_scroll_view.html
+  - scroll-header 부분 출력이 이상하다 @firefox
+  - 우하단 "메뉴/Prev/Next" 위치가 고정되지 않는다 @firefox
+- http://cornerstone.sktelecom.com/livedoc/4_4_02_list_view.html
+- http://cornerstone.sktelecom.com/livedoc/4_4_05_chart.html
+- http://cornerstone.sktelecom.com/livedoc/4_4_06_data_table.html
+  - 문구 검토; MVC 방식은 별도로 사용자가 일반방식 처럼 CSS를 추가하지 않고도 사용않아도 된다.
+                                                                       ^^^^^^^^^^^^^^^^^
+- http://cornerstone.sktelecom.com/cornertest/test-ui/components.html
+  - Nav bar. text+icons와 icons의 차이점?
+  - Project Name에서 마우스 이동시 깜박거림 @firefox
+  - Nav bar 메뉴 선택시 페이지의 모든 Nav bar가 반응
+- live-doc첫화면에서 실제 첫페이지(http://cornerstone.sktelecom.com/livedoc/1__Introduction.html)로 이동하는 메뉴가 없다.
