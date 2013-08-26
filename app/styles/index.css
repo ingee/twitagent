@@ -1,6 +1,13 @@
-/*-- HTML5 Boilerplate. -----------------------------------------------------*/
-
-@import "../../vendor/h5bp/css/normalize.css";
-@import "../../vendor/h5bp/css/main.css";
-
-/*-- Application stylesheets. -----------------------------------------------*/
+.twit-item {
+  margin: 10px;
+}
+.icon {
+  float: left;
+  margin: 20px;
+}
+.text {
+  margin-left: 80px;
+}
+.time {
+  margin-right: 10px;
+}
