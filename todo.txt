@@ -9,16 +9,17 @@
     !- grunt 설치
       !- $> npm install grunt --save-dev
   !- 빌드 규칙 작성
-    - debug: jshint, run
-    - release: jshint, uglify, qunit test
+    !- debug: jshint, run
+    !- release: jshint, uglify, qunit test
   !- 테스트 규칙 작성
     => 담에...
 - UI 구현
   !- test AWS server 구축 => http://54.250.196.206/
   - 소스 골격
-    - twit-view html
+    !- twit-view html
+    !- make router
+    !- 화면전환 효과
     - make dummy twit-view
-    - make router
     - show dummy twit-view
     - define twit-model
     - make dummy twit-model-view
@@ -32,7 +33,6 @@
     - make @-page
     - make list-page
     - make write-page
-  - 화면전환 효과
 - Twitter API 호출
   - log in
   - 홈 기사 목록 query
