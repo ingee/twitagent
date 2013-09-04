@@ -1,10 +1,11 @@
 ﻿define( [
   'backbone',
-  'views/twitvw',
+  'models/twit-model',
+  'views/twit-view',
   'multipage-router'
 ],
 
-function(Backbone, TwitView, MultipageRouter) {
+function(Backbone, TwitModel, TwitView, MultipageRouter) {
 
   return {
     launch: function() {
@@ -16,8 +17,7 @@ function(Backbone, TwitView, MultipageRouter) {
             fragment: [ '', 'articles' ],
             el: '#article-vw',
             render: function() {
-              var vw = new TwitView();
-              vw.render();
+              this.twitView.render();
             }
           },
           'list-page': {
@@ -35,6 +35,12 @@ function(Backbone, TwitView, MultipageRouter) {
           'article-page:list-page': 'flip',
           'article-page:default': 'flip',
           'list-page:default': 'flip'
+        },
+        
+        initialize: function() {
+          console.log('router.initialize()');
+          this.twitModel = new TwitModel();
+          this.twitView = new TwitView({ model: this.twitModel });
         }
       } );
     

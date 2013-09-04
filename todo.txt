@@ -21,10 +21,10 @@
     !- 화면전환 효과
     !- make dummy twit-view
     !- show dummy twit-view
-    - define twit-model
-    - make dummy twit-model-view
-    - show dummy twit-model-view
-    - make twit-view html to template
+    !- make twit-view html to template
+    !- define twit-model
+    !- make dummy twit-model-view
+    !- show dummy twit-model-view
     - define twit-collection
     - define twit-collection-view
     - show dummy twit-collection-view
