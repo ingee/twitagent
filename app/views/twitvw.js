@@ -1,10 +1,11 @@
 ﻿define([
+  'backbone'
 ],
 
-function() {
+function(Backbone) {
 
   var TwitView = Backbone.View.extend({
-    id: 'twitView',
+    el: '#article-item-vw',
     
     render: function() {
       var html = '<div class="twit-item">' +
@@ -24,6 +25,6 @@ function() {
     }
   });
 
-  return Router;
+  return TwitView;
 
 });

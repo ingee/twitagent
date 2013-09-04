@@ -1,9 +1,10 @@
 ﻿define( [
   'backbone',
+  'views/twitvw',
   'multipage-router'
 ],
 
-function(Backbone, MultipageRouter) {
+function(Backbone, TwitView, MultipageRouter) {
 
   return {
     launch: function() {
@@ -15,6 +16,8 @@ function(Backbone, MultipageRouter) {
             fragment: [ '', 'articles' ],
             el: '#article-vw',
             render: function() {
+              var vw = new TwitView();
+              vw.render();
             }
           },
           'list-page': {

@@ -19,8 +19,8 @@
     !- twit-view html
     !- make router
     !- 화면전환 효과
-    - make dummy twit-view
-    - show dummy twit-view
+    !- make dummy twit-view
+    !- show dummy twit-view
     - define twit-model
     - make dummy twit-model-view
     - show dummy twit-model-view
