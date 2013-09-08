@@ -25,9 +25,9 @@
     !- define twit-model
     !- make dummy twit-model-view
     !- show dummy twit-model-view
-    - define twit-collection
-    - define twit-collection-view
-    - show dummy twit-collection-view
+    !- define twit-collection
+    !- define twit-collection-view
+    !- show dummy twit-collection-view
   - UI 골격
     - make home-page
     - make @-page

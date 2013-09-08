@@ -27,6 +27,11 @@
             dest: 'dist/'
           },
           {
+            expand: true,
+            src: ['data/**'],
+            dest: 'dist/'
+          },
+          {
             src: ['index.html', 'favicon.ico'],
             dest: 'dist/'
           }
@@ -41,7 +46,7 @@
             expand: true,
             src: ['app/**/*.js'],
             dest: 'dist/',
-            ext: '.min.js'
+            ext: '.js'
           },
         ],
         options: {
