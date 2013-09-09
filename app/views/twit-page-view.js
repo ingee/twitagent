@@ -18,20 +18,18 @@ function(
     el: '#twit-vw',
 
     render: function() {
-      this.$el.html(TwitPageTemplate());
+      this.listView.render();
+      return this;
+    },
 
+    initialize: function() {
+      this.$el.html(TwitPageTemplate());
       this.listView = new ListView({
         el: '#twit-list',
         collection: new TwitCollection(),
         itemView: TwitItemView,
         optimization: false
       });
-      this.listView.render();
-
-      return this;
-    },
-
-    initialize: function() {
     }
   });
 

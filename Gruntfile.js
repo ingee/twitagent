@@ -21,18 +21,13 @@
     copy: {
       release: {
         files: [
+          { expand: true, src: ['cornerstonefw/**'], dest: 'dist/' },
+          { expand: true, src: ['app/styles/**'], dest: 'dist/' },
+          { expand: true, src: ['app/templates/**'], dest: 'dist/' },
+          { expand: true, src: ['app/img/**'], dest: 'dist/' },
+          { expand: true, src: ['data/**'], dest: 'dist/' },
           {
-            expand: true,
-            src: ['cornerstonefw/**'],
-            dest: 'dist/'
-          },
-          {
-            expand: true,
-            src: ['data/**'],
-            dest: 'dist/'
-          },
-          {
-            src: ['index.html', 'favicon.ico'],
+            src: ['index.html', 'favicon.ico', 'twit_icon.jpg'],
             dest: 'dist/'
           }
         ]

@@ -15,7 +15,7 @@
     => 담에...
 - UI 구현
   !- test AWS server 구축 => http://54.250.196.206/
-  - 소스 골격
+  !- 소스 골격
     !- twit-view html
     !- make router
     !- 화면전환 효과

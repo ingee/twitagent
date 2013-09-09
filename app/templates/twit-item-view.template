@@ -1,13 +1,13 @@
-﻿<a class="twit-item">
+﻿<div class="twit-item">
   <div class="header">
-    <img class="icon" src={{ twit.iconPath }}></img>
-    <strong class="user-full-name">{{ twit.userName }}</strong>
-    <small class="user-id">{{ twit.userID }}</small>
+    <img class="icon" src={{iconPath}}></img>
+    <strong class="user-full-name">{{userName}}</strong>
+    <small class="user-id">{{userID}}</small>
   </div>
   <p class="text">
-    {{ twit.text }}
+    {{text}}
   </p>
   <div class="footer">
-    <small class="time">{{ twit.time }}</small>
+    <small class="time">{{time}}</small>
   </div>
-</a>
+</div>
