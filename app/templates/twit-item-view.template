@@ -1,4 +1,4 @@
-﻿<div class="twit-item">
+﻿<a class="twit-item">
   <div class="header">
     <img class="icon" src={{ twit.iconPath }}></img>
     <strong class="user-full-name">{{ twit.userName }}</strong>
@@ -10,4 +10,4 @@
   <div class="footer">
     <small class="time">{{ twit.time }}</small>
   </div>
-</div>
+</a>
