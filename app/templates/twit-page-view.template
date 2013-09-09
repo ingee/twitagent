@@ -1,4 +1,4 @@
-﻿<div id="twit-page" class="container">
-  <div id="twit-list">
+﻿<div id="twit-page" class="container lists">
+  <div id="twit-list" class="lists-con">
   </div>
 </div>
