@@ -29,9 +29,9 @@
     !- define twit-collection-view
     !- show dummy twit-collection-view
   - UI 골격
-    - make home-page
-    - make @-page
+    !- make home-page
     - make list-page
+    - make @-page
     - make write-page
 - Twitter API 호출
   - log in
