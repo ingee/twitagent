@@ -1,7 +1,7 @@
 ﻿define([
   'backbone',
   'template!templates/twit-page-view',
-  'views/twit-item-view',
+  'views/twit-view',
   'models/twit-collection',
   'widget-listview'
 ],
@@ -9,7 +9,7 @@
 function(
   Backbone, 
   TwitPageTemplate, 
-  TwitItemView, 
+  TwitView, 
   TwitCollection,
   ListView
 ) {
@@ -32,7 +32,7 @@ function(
       this.listView = new ListView({
         el: '#twit-list',
         collection: new TwitCollection(),
-        itemView: TwitItemView,
+        itemView: TwitView,
         optimization: false
       });
     }

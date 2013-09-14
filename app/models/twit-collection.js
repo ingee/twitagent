@@ -1,12 +1,12 @@
 ﻿define([
   'backbone',
-  'models/twit-item-model'
+  'models/twit-model'
 ],
 
-function(Backbone, TwitItemModel) {
+function(Backbone, TwitModel) {
 
   var TwitCollection = Backbone.Collection.extend({
-    model: TwitItemModel,
+    model: TwitModel,
     url: 'data/twits.json'
   });
 

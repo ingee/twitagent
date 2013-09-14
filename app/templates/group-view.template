@@ -1,3 +1,5 @@
-﻿<div class="group-item">
-  {{name}}  <span class="badge badge-info">{{memberCount}}</span>
-</div>
+﻿<a href="#groups/{{name}}">
+  <div class="group-item">
+    {{name}}  <span class="badge badge-info">{{memberCount}}</span>
+  </div>
+</a>

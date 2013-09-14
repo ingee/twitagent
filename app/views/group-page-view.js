@@ -1,16 +1,16 @@
 ﻿define([
   'backbone',
   'template!templates/group-page-view',
-  'views/group-item-view',
-  'models/twit-collection',
+  'views/group-view',
+  'models/group-collection',
   'widget-listview'
 ],
 
 function(
   Backbone, 
   GroupPageTemplate, 
-  GroupItemView,
-  TwitCollection,
+  GroupView,
+  GroupCollection,
   ListView
 ) {
 
@@ -19,7 +19,7 @@ function(
     isFirst: true,
 
     render: function() {
-      // 최초에만 listView 렌더링 리스트뷰의 렌더링은 itemView를 계속 append.
+      // 최초에만 listView 렌더링, 리스트뷰의 렌더링은 itemView를 계속 append.
       if (this.isFirst) {
         this.listView.render();
         this.isFirst = false;
@@ -31,8 +31,8 @@ function(
       this.$el.html(GroupPageTemplate());
       this.listView = new ListView({
         el: '#group-list',
-        collection: new TwitCollection(),
-        itemView: GroupItemView,
+        collection: new GroupCollection(),
+        itemView: GroupView,
         optimization: false
       });
     }

@@ -1,19 +1,19 @@
 ﻿define([
   'backbone',
-  'template!templates/twit-item-view'
+  'template!templates/twit-view'
 ],
 
-function(Backbone, TwitItemTemplate) {
+function(Backbone, TwitViewTemplate) {
 
-  var TwitItemView = Backbone.View.extend({
+  var TwitView = Backbone.View.extend({
     tagName: 'li',
 
     render: function() {
-      this.$el.html(TwitItemTemplate(this.model.toJSON()));
+      this.$el.html(TwitViewTemplate(this.model.toJSON()));
       return this;
     }
   });
 
-  return TwitItemView;
+  return TwitView;
 
 });

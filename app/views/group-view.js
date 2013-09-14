@@ -1,19 +1,19 @@
 ﻿define([
   'backbone',
-  'template!templates/group-item-view'
+  'template!templates/group-view'
 ],
 
-function(Backbone, GroupItemTemplate) {
+function(Backbone, GroupViewTemplate) {
 
-  var GroupItemView = Backbone.View.extend({
+  var GroupView = Backbone.View.extend({
     tagName: 'li',
 
     render: function() {
-      this.$el.html(GroupItemTemplate(this.model.toJSON()));
+      this.$el.html(GroupViewTemplate(this.model.toJSON()));
       return this;
     }
   });
 
-  return GroupItemView;
+  return GroupView;
 
 });

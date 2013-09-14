@@ -1,0 +1,14 @@
+﻿[
+  {
+    "name": "친구들",
+    "memberCount": 10
+  },
+  {
+    "name": "개발자들",
+    "memberCount": 20
+  },
+  {
+    "name": "얘기꾼들",
+    "memberCount": 30
+  }
+]
