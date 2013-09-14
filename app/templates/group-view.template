@@ -1,0 +1,3 @@
+﻿<div class="group-item">
+  {{name}}  <span class="badge badge-info">{{memberCount}}</span>
+</div>
