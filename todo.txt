@@ -36,7 +36,12 @@
     !- make write-page
       => 담에...
 - Twitter API 호출
-  - log in
+  !- Twitter API 사용법 체크 (from https://dev.twitter.com/)
+    => 몇달전('13년 6월) Twitter API 1.1이 기존 체계를 갈아 엎었다.
+      => 이젠 반드시 OAuth 1.0a를 사용해야 한다.
+      => 트위터는 누가 어떤 API를 얼마나 호출하는지 인지할 수 있게 됐다.
+      => Javascript Client WebApp 만으로 Twitter API를 호출하기는 어렵다.
+        => Twitter는 공식적으로 Javascript Client WebApp 만으로 Twitter API를 호출하지 말라고 강력하게 권장한다.
   - 홈 기사 목록 query
   - list 목록 query
   - list 기사 목록 query
