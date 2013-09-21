@@ -7,7 +7,7 @@ function(Backbone, GroupModel) {
 
   var GroupCollection = Backbone.Collection.extend({
     model: GroupModel,
-    url: 'data/groups.json'
+    url: 'api/get_group_list.php'
   });
 
   return GroupCollection;

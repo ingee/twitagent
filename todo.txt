@@ -35,38 +35,17 @@
       => 담에...
     !- make write-page
       => 담에...
-- Twitter API 호출
+!- Twitter API 호출
   !- Twitter API 사용법 체크 (from https://dev.twitter.com/)
     => 몇달전('13년 6월) Twitter API 1.1이 기존 체계를 갈아 엎었다.
       => 이젠 반드시 OAuth 1.0a를 사용해야 한다.
       => 트위터는 누가 어떤 API를 얼마나 호출하는지 인지할 수 있게 됐다.
       => Javascript Client WebApp 만으로 Twitter API를 호출하기는 어렵다.
         => Twitter는 공식적으로 Javascript Client WebApp 만으로 Twitter API를 호출하지 말라고 강력하게 권장한다.
-  - 홈 기사 목록 query
-  - list 목록 query
-  - list 기사 목록 query
-- 상태 관리
-  - 설정
-  - 사용자 선택 저장
-    - 초기 리스트
-    - id/ pswd
-
-to-study
-=========
-- 구글 dev-tools @code-school
-- 백본 dev-tools @코너스톤 블로그
-
-to-check
-=========
-{{{
-- uglify의 정석
-  - requirejs, backbone 등 기본 fw 파일들은 하나의 파일로 묶는 것이 좋은가?
-  - concat 하고 말고의 기준이 무엇인가?
-  - best concat tool은? uglify? jam? etc?
-- twitter top_nav 구현 방법?
-  - 코너스톤으로 어떻게 구현할 수 있나?
-  - 코너스톤 nav-bar 개선 포인트?
-}}} 8.20
-{{{
-- 화면 상단 고정 메뉴 영역을 만들려면?
-}}}
+  !- 홈 timeline query
+  !- list 목록 query
+  !- php & backbone 연결
+  !- list 기사 목록 query
+    => 담에...
+!- Twitter OAuth for multi-user
+  => 담에...

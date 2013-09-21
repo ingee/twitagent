@@ -7,7 +7,8 @@ function(Backbone) {
   var GroupModel = Backbone.Model.extend({
     defaults: {
       name: 'group-name',
-      memberCount: 0
+      memberCount: 0,
+      groupID: 0
     }
   });
 
