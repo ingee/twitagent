@@ -20,10 +20,10 @@ function(
       var MainRouter = MultipageRouter.extend( {
         pages: {
           'twit-page': {
-            fragment: [ '', 'twits' ],
+            fragment: [ '', 'twits', "groups/:id" ],
             el: '#twit-vw',
-            render: function() {
-              this.twitPageView.render();
+            render: function(groupID) {
+              this.twitPageView.render(groupID);
             }
           },
           'group-page': {

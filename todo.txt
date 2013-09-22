@@ -46,6 +46,5 @@
   !- list 목록 query
   !- php & backbone 연결
   !- list 기사 목록 query
-    => 담에...
 !- Twitter OAuth for multi-user
   => 담에...

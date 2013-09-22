@@ -37,9 +37,10 @@ if ($code == 200) {
     );
     $i++;
   }
-  //print_r($resultArr);
   print json_encode($resultArr);
-} else {
+  //print_r(json_decode($connection->response['response'], true));
+}
+else {
   print "Error: $code";
 }
 

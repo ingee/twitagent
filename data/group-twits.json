@@ -1,0 +1,23 @@
+﻿[
+  {
+    "iconPath": "twit_icon.jpg",
+    "userName": "Kim, InGee",
+    "userID": "@ingeeKim",
+    "text": "((01)) 리스트 기사...",
+    "time": "8월26일 23:05"
+  },
+  {
+    "iconPath": "twit_icon.jpg",
+    "userName": "Kim, InGee",
+    "userID": "@ingeeKim",
+    "text": "((02)) 리스트 기사...",
+    "time": "8월26일 23:05"
+  },
+  {
+    "iconPath": "twit_icon.jpg",
+    "userName": "Kim, InGee",
+    "userID": "@ingeeKim",
+    "text": "((03)) 리스트 기사...",
+    "time": "8월26일 23:05"
+  }
+]

@@ -2,7 +2,7 @@
   <div class="header">
     <img class="icon" src={{iconPath}}></img>
     <strong class="user-full-name">{{userName}}</strong>
-    <small class="user-id">{{userID}}</small>
+    <small class="user-id">@{{userID}}</small>
   </div>
   <p class="text">
     {{text}}

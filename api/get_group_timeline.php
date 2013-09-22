@@ -1,5 +1,7 @@
 <?php
 
+error_reporting  (E_ALL);
+ini_set ('display_errors', true);
 header("Content-Type: application/json; charset=UTF-8");
 
 // Load the app's OAuth tokens into memory
@@ -18,8 +20,8 @@ $connection = new tmhOAuth(array(
 
 // Send a tweet
 $code = $connection->request('GET', 
-  $connection->url('1.1/lists/list'), 
-  array('reverse' => true));
+  $connection->url('1.1/lists/statuses'), 
+  array('list_id' => $_REQUEST['group_id']));
 
 // A response code of 200 is a success
 if ($code == 200) {
@@ -28,9 +30,12 @@ if ($code == 200) {
   $resArr = json_decode($connection->response['response'], true);
   foreach ($resArr as $res) {
     $resultArr[$i] = array(
-      "name"=>$res["name"],
-      "memberCount"=>$res["member_count"],
-      "groupID"=>$res["id"]
+      "iconPath"  => $res["user"]["profile_image_url"],
+      "userName"  => $res["user"]["name"],
+      "userID"    => $res["user"]["screen_name"],
+      "text"      => $res["text"], 
+      "time"      => $res["created_at"],
+      "twitID"    => $res["id"]
     );
     $i++;
   }
