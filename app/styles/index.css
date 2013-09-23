@@ -40,3 +40,16 @@ body {
         display: none;
     }
 }
+
+.lists ul li:active, .lists ul li.active {
+    background: #2A6B8D;
+    color: #FFF;
+    border-bottom: 1px solid transparent;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.lists .lists-con li:active a {
+    color: #FFF;
+}
