@@ -2,7 +2,8 @@
   'backbone',
   'views/twit-page-view',
   'views/group-page-view',
-  'multipage-router'
+  'multipage-router',
+  'widget-plugins'
 ],
 
 function(
